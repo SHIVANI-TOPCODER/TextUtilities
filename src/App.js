@@ -27,6 +27,9 @@ function App() {
       showAlert("Blue mode has been enable", "success");
     } else if (x === "dark") {
       document.body.style.backgroundColor = "grey";
+      for (let i = 0, max = all.length; i < max; i++) {
+        all[i].style.color = "white";
+      }
       showAlert("Dark mode has been enable", "success");
     } else if (x === "light") {
       document.body.style.backgroundColor = "white";
